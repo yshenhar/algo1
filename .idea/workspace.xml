@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c150308-9018-4502-9b19-7c38132d5365" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algs4/GrahamScan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algo1/dequeue/Deque.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms1.iml" afterPath="$PROJECT_DIR$/algorithms1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algo1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,15 +33,14 @@
     <file path="/Huffman.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675628750" ignored="false" />
     <file path="/PictureDump.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675802797" ignored="false" />
     <file path="/RunLength.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675854941" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/Out.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/Picture.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/PictureDump.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/StdAudio.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/Draw.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
-    <file path="$PROJECT_DIR$/src/stdlib/StdDraw.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675970166" ignored="false" />
     <file path="/PercolationStats.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364748944371" ignored="false" />
-    <file path="/fragment.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364678805478" ignored="false" />
+    <file path="/fragment.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365041741011" ignored="false" />
     <file path="/Dummy.txt" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365040849306" ignored="false" />
+    <file path="/a.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365045608476" ignored="false" />
+    <file path="/sample.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365041989141" ignored="false" />
+    <file path="/Deque.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365048240687" ignored="false" />
+    <file path="/*.regexp" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365042773432" ignored="false" />
+    <file path="/DequeueTest.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365048291621" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +103,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PercolationStats.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algo1/perculate/PercolationStats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Bag.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algs4/Bag.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,62 +117,28 @@
       <file leaf-file-name="Queue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algs4/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="55" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
+            <state line="155" column="0" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Insertion.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algs4/Insertion.java">
+      <file leaf-file-name="Deque.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algo1/dequeue/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="31" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.0">
+            <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.80487806">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Point2D.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algs4/Point2D.java">
+      <file leaf-file-name="DequeueTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="48" selection-start="664" selection-end="675" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrahamScan.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algs4/GrahamScan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="44" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-0.1956044">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Percolation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algo1/perculate/Percolation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="66" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stack.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algs4/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="52" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResizingArrayStack.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algs4/ResizingArrayStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="144" column="18" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/algs4/RandomSeq.java" />
-        <option value="$PROJECT_DIR$/src/algs4/ResizingArrayQueue.java" />
         <option value="$PROJECT_DIR$/src/algs4/RunLength.java" />
         <option value="$PROJECT_DIR$/src/algs4/Selection.java" />
         <option value="$PROJECT_DIR$/src/algs4/SeparateChainingHashST.java" />
@@ -219,6 +175,8 @@
         <option value="$PROJECT_DIR$/src/algo1/perculate/Percolation.java" />
         <option value="$PROJECT_DIR$/src/algs4/ResizingArrayStack.java" />
         <option value="$PROJECT_DIR$/src/algo1/perculate/PercolationStats.java" />
+        <option value="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
+        <option value="$PROJECT_DIR$/src/algo1/dequeue/Deque.java" />
       </list>
     </option>
   </component>
@@ -294,6 +252,9 @@
           <State>
             <id>Verbose or redundant code constructs</id>
           </State>
+          <State>
+            <id>XPath</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
@@ -310,7 +271,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -358,6 +319,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dequeue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -372,7 +351,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,12 +366,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stdlib" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -401,7 +385,51 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Perculation Stats">
+  <component name="RunManager" selected="JUnit.DequeueTest">
+    <configuration default="false" name="DequeueTest.emptyDeque" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="algorithms1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algo1.dequeue" />
+      <option name="MAIN_CLASS_NAME" value="algo1.dequeue.DequeueTest" />
+      <option name="METHOD_NAME" value="emptyDeque" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DequeueTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="algorithms1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algo1.dequeue" />
+      <option name="MAIN_CLASS_NAME" value="algo1.dequeue.DequeueTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -506,9 +534,17 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Perculation Stats" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DequeueTest.emptyDeque" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DequeueTest" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DequeueTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DequeueTest.emptyDeque" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -543,12 +579,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -559,8 +595,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41909814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.58090186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41909814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -627,20 +663,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/algs4/SymbolGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algs4/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/WhiteFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="21" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
@@ -659,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="52" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0">
+        <state line="169" column="5" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -671,16 +693,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo1/perculate/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="66" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algo1/perculate/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.30769232">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -719,14 +734,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="55" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
+        <state line="155" column="0" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/Insertion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="31" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.0">
+        <state line="89" column="5" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -740,7 +755,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/GrahamScan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="44" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-0.1956044">
+        <state line="36" column="44" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algo1/perculate/Percolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="0" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="18" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algo1/dequeue/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.80487806">
           <folding />
         </state>
       </provider>
@@ -797,7 +835,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>algo1</last-edited>
+          <last-edited>algorithms1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -810,7 +848,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>stdlib</last-edited>
+          <last-edited>algs4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
