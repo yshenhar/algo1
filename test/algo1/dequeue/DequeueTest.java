@@ -144,6 +144,5 @@ public class DequeueTest {
   public void adding_last_null_item_will_throw() {
     deque.addLast(null);
   }
-
   private Deque<String> deque;
 }

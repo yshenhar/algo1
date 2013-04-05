@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c150308-9018-4502-9b19-7c38132d5365" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algo1/dequeue/Deque.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms1.iml" afterPath="$PROJECT_DIR$/algorithms1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" afterPath="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
     </list>
     <ignored path="algo1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,6 +37,7 @@
     <file path="/Deque.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365048240687" ignored="false" />
     <file path="/*.regexp" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365042773432" ignored="false" />
     <file path="/DequeueTest.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365048291621" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365122837482" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,19 +120,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deque.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Deque.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algo1/dequeue/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.80487806">
+            <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DequeueTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DequeueTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="18" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+            <state line="146" column="8" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.70731705">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/algo1/perculate/Percolation.java" />
         <option value="$PROJECT_DIR$/src/algs4/ResizingArrayStack.java" />
         <option value="$PROJECT_DIR$/src/algo1/perculate/PercolationStats.java" />
-        <option value="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
         <option value="$PROJECT_DIR$/src/algo1/dequeue/Deque.java" />
+        <option value="$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java" />
       </list>
     </option>
   </component>
@@ -596,7 +593,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.58090186" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41909814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41909814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -767,19 +764,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java">
+    <entry file="file://$PROJECT_DIR$/src/algo1/dequeue/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="18" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo1/dequeue/Deque.java">
+    <entry file="file://$PROJECT_DIR$/test/algo1/dequeue/DequeueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="54" selection-start="639" selection-end="639" vertical-scroll-proportion="0.80487806">
-          <folding />
+        <state line="146" column="8" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.70731705">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
