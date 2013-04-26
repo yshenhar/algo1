@@ -5,8 +5,8 @@ import org.junit.Test;
 
 import java.util.Iterator;
 
-import static org.junit.Assert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class DequeueTest {
 
