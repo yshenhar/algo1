@@ -37,8 +37,8 @@ public class Particle {
     public Particle() {
         rx     = Math.random();
         ry     = Math.random();
-        vx     = 0.01 * (Math.random() - 0.5);
-        vy     = 0.01 * (Math.random() - 0.5);
+        vx     = 0.02 * (Math.random() - 0.5);
+        vy     = 0.02 * (Math.random() - 0.5);
         radius = 0.01;
         mass   = 0.5;
         color  = Color.BLACK;

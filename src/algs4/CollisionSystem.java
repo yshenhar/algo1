@@ -162,6 +162,7 @@ public class CollisionSystem {
             int N = Integer.parseInt(args[0]);
             particles = new Particle[N];
             for (int i = 0; i < N; i++) particles[i] = new Particle();
+            //particles[N] = new Particle(0.5, 0.5, 0.00001, 0.00001, 0.05, 1000, Color.RED);
         }
 
         // or read from standard input
