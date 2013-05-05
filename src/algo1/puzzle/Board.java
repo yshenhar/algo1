@@ -62,11 +62,11 @@ public class Board {
   }
   private int puzzleValue(int row, int col) {
     int val = row * dimension + col + 1;
-    return val < 9 ? val : 0;
+    return val < (dimension * dimension) ? val : 0;
   }
 
   public Board twin() {
-    Board twin = new Board(this.blocks);
+    Board twin = new Board(copyBlocks());
     boolean exchange = false;
     while (!exchange) {
       int i = StdRandom.uniform(dimension);
@@ -87,8 +87,10 @@ public class Board {
     return twin;
   }
   public boolean equals(Object that) {
+    if (that == null) return false;
     if (that == this) return true;
-    if (that.getClass() == this.getClass()) {
+
+    if (this.getClass() == that.getClass()) {
       Board b = (Board) that;
       return Arrays.equals(this.blocks, b.blocks);
     }
