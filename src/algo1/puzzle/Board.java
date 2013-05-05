@@ -92,7 +92,7 @@ public class Board {
 
     if (this.getClass() == that.getClass()) {
       Board b = (Board) that;
-      return Arrays.equals(this.blocks, b.blocks);
+      return Arrays.deepEquals(this.blocks, b.blocks);
     }
     return false;
   }

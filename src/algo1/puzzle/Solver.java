@@ -11,39 +11,63 @@ import java.util.Comparator;
 public class Solver {
   private SearchNode currentSearchNode;
 
+  private static class BoardSolver {
+    private SearchNode currentNode;
+    MinPQ<SearchNode> pq;
+
+    public BoardSolver(Board initial) {
+      pq = new MinPQ<SearchNode>(1, new SearchNodeCompare());
+      currentNode = new SearchNode(initial, null, 0);
+      pq.insert(currentNode);
+    }
+
+    public SearchNode currentNode() {
+      return currentNode;
+    }
+
+    public boolean solved() {
+      return currentNode.board.isGoal();
+    }
+
+    public int queueSize() {
+      return pq.size();
+    }
+
+    public void step() {
+      if (!solved() && !pq.isEmpty()) {
+        SearchNode node = pq.delMin();
+        if (!node.board.isGoal()) {
+          for (Board b : node.board.neighbors()) {
+            if (currentNode.prev == null || !b.equals(currentNode.prev.board))
+              pq.insert(new SearchNode(b, node, node.moves + 1));
+          }
+        }
+        currentNode = node;
+      }
+    }
+  }
+
   // find a solution to the initial board (using the A* algorithm)
   public Solver(Board initial) {
-    MinPQ<SearchNode> pq = new MinPQ<SearchNode>(1, new SearchNodeCompare());
-    currentSearchNode = new SearchNode(initial, null, 0);
-    pq.insert(currentSearchNode);
+    BoardSolver solver = new BoardSolver(initial);
+    BoardSolver twinSolver = new BoardSolver(initial.twin());
 
-    MinPQ<SearchNode> twinPq = new MinPQ<SearchNode>(1, new SearchNodeCompare());
-    SearchNode twinNode = new SearchNode(initial.twin(), null, 0);
-    twinPq.insert(twinNode);
-
-    while (!pq.isEmpty() && ! twinPq.isEmpty()) {
-      SearchNode node = pq.delMin();
-      twinNode = twinPq.delMin();
-
-      if (node.board.isGoal()) {
-        currentSearchNode = node;
+    while (!solver.solved() && !twinSolver.solved()) {
+      solver.step();
+      System.out.println("current node \n" + solver.currentNode().board +
+          "with moves " + solver.currentNode().moves +
+          " hamming " + solver.currentNode().board.hamming() +
+          " with " + solver.queueSize() + " boards in pq\n");
+      if (solver.solved()) {
+        currentSearchNode = solver.currentNode();
         break;
-      } else if (twinNode.board.isGoal()) {
+      }
+      twinSolver.step();
+      if (twinSolver.solved()) {
         currentSearchNode = null;
         break;
       }
-
-      for (Board b : node.board.neighbors()) {
-        if (currentSearchNode.prev == null || !b.equals(currentSearchNode.prev.board))
-          pq.insert(new SearchNode(b, node, node.moves + 1));
-      }
-      for (Board b : twinNode.board.neighbors()) {
-        if (twinNode.prev == null || !b.equals(twinNode.prev.board))
-          twinPq.insert(new SearchNode(b, twinNode, twinNode.moves + 1));
-      }
-      currentSearchNode = node;
     }
-
   }
 
   // is the initial board solvable?
