@@ -38,7 +38,7 @@ public class Solver {
         SearchNode node = pq.delMin();
         if (!node.board.isGoal()) {
           for (Board b : node.board.neighbors()) {
-            if (currentNode.prev == null || !b.equals(currentNode.prev.board))
+            if (currentNode.prev == null || !b.equals(node.prev.board))
               pq.insert(new SearchNode(b, node, node.moves + 1));
           }
         }
@@ -91,7 +91,9 @@ public class Solver {
     @Override public int compare(SearchNode first, SearchNode second) {
       int firstCost = first.board.manhattan() + first.moves;
       int secondCost = second.board.manhattan() + second.moves;
-      return firstCost - secondCost;
+      if (firstCost > secondCost) return 1;
+      else if (firstCost < secondCost) return -1;
+      else return 0;
     }
   }
 

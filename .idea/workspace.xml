@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c150308-9018-4502-9b19-7c38132d5365" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/algo1/puzzle/SolverTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algo1/puzzle/Board.java" afterPath="$PROJECT_DIR$/src/algo1/puzzle/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algo1/puzzle/Solver.java" afterPath="$PROJECT_DIR$/src/algo1/puzzle/Solver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algo1/puzzle/puzzle4x4.txt" afterPath="$PROJECT_DIR$/src/algo1/puzzle/puzzle4x4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algo1.iws" />
@@ -35,7 +33,7 @@
     <file path="/RunLength.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364675854941" ignored="false" />
     <file path="/PercolationStats.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1364748944371" ignored="false" />
     <file path="/fragment.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367791428492" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367714974407" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367807906292" ignored="false" />
     <file path="/a.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365045608476" ignored="false" />
     <file path="/sample.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365041989141" ignored="false" />
     <file path="/Deque.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1365048240687" ignored="false" />
@@ -48,7 +46,7 @@
     <file path="/Fast.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1366502469788" ignored="false" />
     <file path="/Board.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367791508311" ignored="false" />
     <file path="/BoardTest.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367637305426" ignored="false" />
-    <file path="/Solver.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367795003922" ignored="false" />
+    <file path="/Solver.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367808776050" ignored="false" />
     <file path="/puzzle4x4.txt" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367717710892" ignored="false" />
     <file path="/SolverTest.java" changelist="5c150308-9018-4502-9b19-7c38132d5365" time="1367792238070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,6 +63,36 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/algo1/pattern/Brute.java" line="23" class="algo1.pattern.Brute" package="algo1.pattern">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/algo1/puzzle/Board.java" line="89" class="algo1.puzzle.Board" package="algo1.puzzle">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -100,36 +128,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/algo1/pattern/Brute.java" line="23" class="algo1.pattern.Brute" package="algo1.pattern">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/algo1/puzzle/Board.java" line="89" class="algo1.puzzle.Board" package="algo1.puzzle">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -147,11 +145,7 @@
         <entry file="file://$PROJECT_DIR$/src/algo1/puzzle/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="94" column="31" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2563#2570#0" expanded="true" />
-                <element signature="e#3516#3523#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,10 +153,10 @@
       <file leaf-file-name="Solver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algo1/puzzle/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="19" selection-start="1562" selection-end="1562" vertical-scroll-proportion="-0.8971292">
+            <state line="40" column="58" selection-start="968" selection-end="968" vertical-scroll-proportion="0.5852156">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2281#2288#0" expanded="true" />
+                <element signature="e#2274#2281#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,9 +166,7 @@
         <entry file="file://$PROJECT_DIR$/test/algo1/puzzle/SolverTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="26" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -210,9 +202,7 @@
         <entry file="file://$PROJECT_DIR$/test/algo1/puzzle/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="4" selection-start="658" selection-end="743" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -303,6 +293,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,9 +370,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="puzzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,9 +432,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -417,57 +447,7 @@
       <recent name="algo1.puzzle" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solver 15">
-    <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="algorithms1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="algo1.puzzle" />
-      <option name="MAIN_CLASS_NAME" value="algo1.puzzle.BoardTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardTest.boardWithFourNeighbors" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="algorithms1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="algo1.puzzle" />
-      <option name="MAIN_CLASS_NAME" value="algo1.puzzle.BoardTest" />
-      <option name="METHOD_NAME" value="boardWithFourNeighbors" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Unslovable">
     <configuration default="false" name="SolverTest.solveBoardIn$Steps" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="algorithms1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -552,6 +532,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="algo1.puzzle in algorithms1" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="algorithms1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algo1.puzzle" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SolverTest.unsolvableBoard" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="algorithms1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algo1.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="algo1.puzzle.SolverTest" />
+      <option name="METHOD_NAME" value="unsolvableBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -564,6 +588,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -591,19 +628,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -721,19 +745,19 @@
       <item index="1" class="java.lang.String" itemvalue="Application.Solver 15" />
       <item index="2" class="java.lang.String" itemvalue="Application.Unslovable" />
       <item index="3" class="java.lang.String" itemvalue="Application.Solver 8" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BoardTest.boardWithFourNeighbors" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn$Steps" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.SolverTest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn4Steps" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn$Steps" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SolverTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn4Steps" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.algo1.puzzle in algorithms1" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.SolverTest.unsolvableBoard" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn4Steps" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SolverTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn$Steps" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.boardWithFourNeighbors" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.algo1.puzzle in algorithms1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SolverTest.unsolvableBoard" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn4Steps" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SolverTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SolverTest.solveBoardIn$Steps" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -769,13 +793,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34217507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -786,10 +809,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.59151196" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40848807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.68302387" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31697613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -856,9 +880,7 @@
   <component name="editorHistoryManager">
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/TreeMap.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-3.9130435">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-3.9130435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/ST.java">
@@ -879,16 +901,12 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="382" selection-end="382" vertical-scroll-proportion="0.375">
-          <folding />
-        </state>
+        <state line="11" column="38" selection-start="382" selection-end="382" vertical-scroll-proportion="0.375" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/Arrays.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="157" column="0" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algs4/BST.java">
@@ -922,9 +940,7 @@
     <entry file="file://$PROJECT_DIR$/test/algo1/puzzle/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="4" selection-start="658" selection-end="743" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -938,9 +954,7 @@
     <entry file="file://$PROJECT_DIR$/test/algo1/puzzle/SolverTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="26" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,11 +968,7 @@
     <entry file="file://$PROJECT_DIR$/src/algo1/puzzle/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="31" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2563#2570#0" expanded="true" />
-            <element signature="e#3516#3523#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,10 +981,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algo1/puzzle/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="19" selection-start="1562" selection-end="1562" vertical-scroll-proportion="-0.8971292">
+        <state line="40" column="58" selection-start="968" selection-end="968" vertical-scroll-proportion="0.5852156">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2281#2288#0" expanded="true" />
+            <element signature="e#2274#2281#0" expanded="true" />
           </folding>
         </state>
       </provider>
