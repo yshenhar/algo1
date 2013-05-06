@@ -116,13 +116,19 @@ public class Solver {
 
   public static void main(String[] args) {
     // create initial board from file
-    In in = new In(args[0]);
-    int N = in.readInt();
-    int[][] blocks = new int[N][N];
-    for (int i = 0; i < N; i++)
-      for (int j = 0; j < N; j++)
-        blocks[i][j] = in.readInt();
-    Board initial = new Board(blocks);
+    Board initial;
+//    if (args.length == 1) {
+//      int N = Integer.parseInt(args[0]);
+//      initial = new Board(initial(N));
+//    } else {
+      In in = new In(args[0]);
+      int N = in.readInt();
+      int[][] blocks = new int[N][N];
+      for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
+          blocks[i][j] = in.readInt();
+      initial = new Board(blocks);
+//    }
 
     // solve the puzzle
     Solver solver = new Solver(initial);
@@ -135,5 +141,27 @@ public class Solver {
       for (Board board : solver.solution())
         StdOut.println(board);
     }
+  }
+
+  private static int[][] initial(int N) {
+    int[] initial = new int[N*N];
+    for (int i = 0; i < initial.length; i++)
+      initial[i] = i;
+
+    for (int i = 0; i < N*N; i++) {
+      // int from remainder of deck
+      int r = i + (int) (Math.random() * (N - i));
+      int swap = initial[r];
+      initial[r] = initial[i];
+      initial[i] = swap;
+    }
+
+    int[][] ret = new int[N][N];
+    for (int i = 0; i < N*N; i++) {
+      int row = i / N;
+      int col = i % N;
+      ret [row][col] = initial[i];
+    }
+    return ret;
   }
 }
