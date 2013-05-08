@@ -11,12 +11,16 @@ import static java.lang.Math.abs;
 public class Board {
   private int[][] blocks;
   private int dimension;
+  private int hamming;
+  private int manhattan;
 
   // (where blocks[i][j] = block in row i, column j)
   public Board(int[][] blocks) {
     int idx = 0;
     dimension = blocks.length;
     this.blocks = blocks;
+    hamming = calcHamming();
+    manhattan = calcManhattan();
   }
 
   public int dimension() {
@@ -24,6 +28,9 @@ public class Board {
   }
 
   public int hamming()  {
+    return hamming;
+  }
+  public int calcHamming()  {
     int hamming = 0;
     for (int i = 0; i < dimension; i++)
       for (int j = 0; j < dimension; j++)
@@ -33,6 +40,9 @@ public class Board {
   }
 
   public int manhattan() {
+    return manhattan;
+  }
+  public int calcManhattan() {
     int manhattan = 0;
     for (int i = 0; i < dimension; i++)
       for (int j = 0; j < dimension; j++)

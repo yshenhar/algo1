@@ -1,7 +1,7 @@
 package algo1.puzzle;
 
+import algs4.BoundedMinPQ;
 import algs4.MinPQ;
-import algs4.Queue;
 import algs4.Stack;
 import stdlib.In;
 import stdlib.StdOut;
@@ -9,15 +9,16 @@ import stdlib.StdOut;
 import java.util.Comparator;
 
 public class Solver {
-  private SearchNode currentSearchNode;
+  private SearchNode result;
 
   private static class BoardSolver {
     private SearchNode currentNode;
     MinPQ<SearchNode> pq;
 
     public BoardSolver(Board initial) {
-      pq = new MinPQ<SearchNode>(1, new SearchNodeCompare());
-      currentNode = new SearchNode(initial, null, 0);
+//      pq = new BoundedMinPQ<SearchNode>(1000, 20000);
+      pq = new MinPQ<SearchNode>();
+      currentNode = new SearchNode(initial, null);
       pq.insert(currentNode);
     }
 
@@ -39,7 +40,7 @@ public class Solver {
         if (!node.board.isGoal()) {
           for (Board b : node.board.neighbors()) {
             if (currentNode.prev == null || !b.equals(node.prev.board))
-              pq.insert(new SearchNode(b, node, node.moves + 1));
+              pq.insert(new SearchNode(b, node));
           }
         }
         currentNode = node;
@@ -52,33 +53,33 @@ public class Solver {
     BoardSolver solver = new BoardSolver(initial);
     BoardSolver twinSolver = new BoardSolver(initial.twin());
 
-    while (!solver.solved() && !twinSolver.solved()) {
+    while (true) {
       solver.step();
-      System.out.println("current node \n" + solver.currentNode().board +
-          "with moves " + solver.currentNode().moves +
-          " hamming " + solver.currentNode().board.hamming() +
-          " with " + solver.queueSize() + " boards in pq\n");
+//      System.out.println("current node \n" + solver.currentNode().board +
+//          "with moves " + solver.currentNode().moves +
+//          " score " + solver.currentNode().board.manhattan() +
+//          " with " + solver.queueSize() + " boards in pq\n");
       if (solver.solved()) {
-        currentSearchNode = solver.currentNode();
+        result = solver.currentNode();
         break;
       }
       twinSolver.step();
       if (twinSolver.solved()) {
-        currentSearchNode = null;
+        result = null;
         break;
       }
     }
   }
 
   // is the initial board solvable?
-  public boolean isSolvable()  {return currentSearchNode != null;}
+  public boolean isSolvable()  {return result != null;}
   // min number of moves to solve initial board; -1 if no solution
-  public int moves() {return isSolvable() ? currentSearchNode.moves : -1;}
+  public int moves() {return isSolvable() ? result.moves : -1;}
 
   // sequence of boards in a shortest solution; null if no solution
   public Iterable<Board> solution() {
     Stack<Board> path = new Stack<Board>();
-    SearchNode curr = currentSearchNode;
+    SearchNode curr = result;
 
     while (curr != null) {
       path.push(curr.board);
@@ -87,30 +88,28 @@ public class Solver {
     return path;
   }
 
-  private static class SearchNodeCompare implements Comparator<SearchNode> {
-    @Override public int compare(SearchNode first, SearchNode second) {
-      int firstCost = first.board.manhattan() + first.moves;
-      int secondCost = second.board.manhattan() + second.moves;
-      if (firstCost > secondCost) return 1;
-      else if (firstCost < secondCost) return -1;
-      else return 0;
-    }
-  }
 
-  private static class SearchNode {
-    public Board board;
-    public SearchNode prev;
-    public int moves;
+  private static class SearchNode implements Comparable<SearchNode>{
+    public final Board board;
+    public final SearchNode prev;
+    public final int moves;
+    private int priority;
 
-    SearchNode(Board board, SearchNode prev, int movesToHere) {
+    SearchNode(Board board, SearchNode prev) {
       this.board = board;
       this.prev = prev;
-      this.moves = movesToHere;
+      this.moves = prev != null ? prev.moves + 1 : 0;
+      priority = board.manhattan() + moves;
     }
 
     @Override
     public String toString() {
       return board + "@" + moves;
+    }
+
+    @Override
+    public int compareTo(SearchNode that) {
+      return this.priority - that.priority;
     }
   }
 

@@ -1,7 +1,9 @@
 package algo1.puzzle;
 
 import org.junit.Test;
+import stdlib.In;
 
+import java.io.File;
 import java.util.Iterator;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -53,4 +55,6 @@ public class SolverTest {
       assertThat(path.next()).as("wrong solution board at step " + (idx + 1)).isEqualTo(new Board(expectedBoards[idx++]));
     }
   }
+
+
 }
