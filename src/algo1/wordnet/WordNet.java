@@ -85,24 +85,21 @@ public class WordNet {
     String hypernyms = args[1];
 
     WordNet wordnet = new WordNet(synsets, hypernyms);
+    int hid = wordnet.noun2ids.get("horse").iterator().next();
+    int zid = wordnet.noun2ids.get("zebra").iterator().next();
 
-//    System.out.println(wordnet.id2synset.size());
-//    System.out.println(wordnet.isNoun("type_A"));
-//    Iterator<String> nouns = wordnet.nouns().iterator();
-//
-//    System.out.println(wordnet.id2synset.get(1319));
-//    System.out.println(wordnet.id2synset.get(1512));
-//
-//    System.out.println(wordnet.sap("Asian", "Australian"));
-//
-//    System.out.println(wordnet.id2synset.get(1224));
-//    System.out.println(wordnet.id2synset.get(1581));
-//    System.out.println(wordnet.sap("Armenia", "Azerbaijan"));
+    Iterable<Integer> path = wordnet.sap.min(hid, zid).pathTo;
+    for (int p : path) {
+      System.out.printf("%s (%d) -> ", wordnet.id2synset.get(p), p);
+    }
+    System.out.println();
 
-    System.out.printf("d(horse,zebra) = %d ancestor = %s\n", wordnet.distance("horse", "zebra"), wordnet.sap("horse", "zebra"));
-    System.out.printf("d(\"American_water_spaniel\", \"histology\") = %d\n", wordnet.distance("American_water_spaniel", "histology"));
-    System.out.printf("d(\"Brown_Swiss\", \"barrel_roll\") = %d\n", wordnet.distance("Brown_Swiss", "barrel_roll"));
-
-
+    path = wordnet.sap.min(zid, hid).pathTo;
+    for (int p : path) {
+      System.out.printf("%s (%d) -> ", wordnet.id2synset.get(p), p);
+    }
+    System.out.println();
+    System.out.println(wordnet.distance("horse", "zebra"));
+    System.out.println(wordnet.distance("zebra", "horse"));
   }
 }

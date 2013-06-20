@@ -11,10 +11,9 @@ import java.util.Iterator;
 public class SAP {
   private Digraph graph;
   static class Path {
-    public int source;
-    public int distance;
-    public int ancestor;
-    public Iterable<Integer> pathTo;
+    public int distance = -1;
+    public int ancestor = -1;
+    public Iterable<Integer> pathTo = null;
 
 //    Path(int source, int distance, int ancestor, Iterable<Integer> pathTo) {
 //      this.source = source;
@@ -32,18 +31,21 @@ public class SAP {
   public int length(int v, int w) {
     BreadthFirstDirectedPaths pv = new BreadthFirstDirectedPaths(graph, v);
     BreadthFirstDirectedPaths pw = new BreadthFirstDirectedPaths(graph, w);
-    int minNode =  minAncestor(v, w);
+
+    int minNode =  min(pv, pw).ancestor;
     return minNode < 0 ? minNode : pv.distTo(minNode) + pw.distTo(minNode);
    }
 
   // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
   public int ancestor(int v, int w) {
-    return minAncestor(v, w);
+    return min(v, w).ancestor;
   }
 
-  private int minAncestor(int v, int w) {
-    BreadthFirstDirectedPaths pv = new BreadthFirstDirectedPaths(graph, v);
-    BreadthFirstDirectedPaths pw = new BreadthFirstDirectedPaths(graph, w);
+  Path min(int v, int w) {
+    return min(new BreadthFirstDirectedPaths(graph, v), new BreadthFirstDirectedPaths(graph, w));
+  }
+
+  Path min(BreadthFirstDirectedPaths pv, BreadthFirstDirectedPaths pw) {
     Path path = new Path();
 
     int minNode = -1;
@@ -55,7 +57,6 @@ public class SAP {
         if (minDist < 0 || dist < minDist){
           path.ancestor = node;
           path.distance = dist;
-          path.source = v;
           path.pathTo = pv.pathTo(node);
 
           minDist = dist;
@@ -64,9 +65,7 @@ public class SAP {
       }
     }
 
-    System.out.printf("from %d to %d", v, minNode);
-
-    return minNode;
+    return path;
   }
 
   // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
